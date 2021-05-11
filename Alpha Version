@@ -1,0 +1,23 @@
+let primeNumber;
+
+let arr = []
+let prime = []
+for (let num = 0; num < 1000; num++){
+  for (let div = 2; div < num; div ++){
+   
+   if (num % div === 0){
+      arr.push(num)  
+
+    }else if(num != arr[arr.length - 1] && num % Math.sqrt(num) != 0 ) {
+
+ 
+      prime.push(num)
+     
+     if (num === prime[prime.length - 2]){
+        prime.pop()
+      }   
+    }
+  }
+}
+
+console.log(prime)
