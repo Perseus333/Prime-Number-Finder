@@ -4,7 +4,7 @@ function Primes(num) {
   return num > 1;
 }
 for(let primes = 1; primes < 100/*Change this number*/; primes++) {
-if(Prime(primes) === true) {
+if(Primes(primes) === true) {
   console.log(primes + " is prime")
 }
 }
